@@ -1,16 +1,185 @@
 <!DOCTYPE html>
-<html>
-<body>
+<!-- saved from url=(0043)https://disnaker.arsipumum.my.id/index1.php -->
+<html lang="id"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arsip File Kantor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
 
-<h1>Judul Utama</h1>
-<p>Ini adalah paragraf pertama saya Jal.
+        header {
+            background-color: #004d40;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+        }
 
-kamu bisa hubungi Saya pada email : admiral.nasution82@mail.go.id</p>
+        header img {
+            height: 50px;
+            margin-right: 20px;
+        }
 
-  <title>Title of the document</title>
+        header h1 {
+            margin: 0;
+            flex-grow: 1;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"], input[type="date"], input[type="file"], select {
+            width: calc(100% - 22px);
+            padding: 10px 15px;
+            border-radius: 50px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            outline: none;
+            text-align: center;
+            box-sizing: border-box;
+            display: block;
+        }
+
+        button {
+            padding: 10px 20px;
+            border-radius: 25px;
+            background-color: #00796b;
+            color: white;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+
+        #search-section input[type="text"], #search-section select {
+            width: 100%;
+        }
+
+        #logout-button {
+            background-color: #c62828; /* Red for logout */
+        }
+
+        #search-section button {
+            margin-top: 0; /* Remove top margin for non-submit buttons */
+        }
+
+        .file-item {
+            background-color: #ffffff;
+            border: 2px solid #00796b;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .file-item a {
+            display: block;
+            font-weight: bold;
+            color: #004d40;
+            margin-bottom: 10px;
+            text-decoration: none;
+        }
+
+        .file-item a:hover {
+            text-decoration: underline;
+        }
+
+        .file-item p {
+            margin: 5px 0;
+            color: #555;
+        }
+    </style>
 </head>
 <body>
-  <h1>Heading</h1>
-  <p>Paragraf.</p>
-</body>
-</html>
+    <header>
+    <img src="Arsip%20File%20Kantor2_files/logoDIS.png" alt="">
+    <h1>DINAS KETENAGAKERJAAN ASAHAN</h1>
+    <!-- Tambahkan link ke halaman SPPT di sini -->
+    <nav style="position: absolute; top: 20px; right: 20px;">
+        <a href="https://disnaker.arsipumum.my.id/sppt.php" style="color: white; text-decoration: none; background-color: #00796b; padding: 10px 20px; border-radius: 20px;">
+            SPPT
+        </a>
+    </nav>
+</header>
+
+    <main>
+        <section id="search-section">
+            <form method="GET" action="https://disnaker.arsipumum.my.id/index1.php" id="search-form">
+                <input type="text" name="search-title" placeholder="Cari berdasarkan Nomor Surat">
+                <input type="text" name="search-jenissurat" placeholder="Cari berdasarkan Jenis Surat">
+                <button type="button" onclick="toggleFilters()">Filter Pencarian</button>
+                <button type="button" id="logout-button" onclick="document.getElementById('logout-form').submit()">Logout</button>
+                <div id="additional-filters" style="display: none;">
+                    <input type="text" name="search-description" placeholder="Cari berdasarkan Asal Surat">
+                    <input type="text" name="search-department" placeholder="Cari berdasarkan Bidang">
+                    <input type="date" name="search-date">
+                    <button type="submit" name="search">Cari</button>
+                </div>
+            </form>
+            <form id="logout-form" method="POST" style="display: none;">
+                <input type="hidden" name="logout" value="1">
+            </form>
+        </section>
+
+        <section id="upload-section">
+            <h2>INPUTKAN FILE</h2>
+            <form id="upload-form" method="POST" enctype="multipart/form-data">
+                <input type="file" name="file" accept=".jpg, .jpeg, .png, .pdf, .doc, .docx, .xls, .xlsx" required="">
+                <input type="text" name="title" placeholder="NOMOR SURAT" required="">
+                <select name="jenissurat" required="">
+                    <option value="" selected="selected">JENIS SURAT</option>
+                    <option value="UMUM">MASUK</option>
+                    <option value="HI">KELUAR</option>
+                </select> 
+                <input type="text" name="description" placeholder="ASAL SURAT" required="">
+                <select name="department" required="">
+                    <option value="" selected="selected">BIDANG</option>
+                    <option value="UMUM">UMUM</option>
+                    <option value="HI">HI</option>
+                    <option value="PELATIHAN">PELATIHAN</option>
+                    <option value="PENEMPATAN">PENEMPATAN</option>
+                    <option value="BENDAHARA">BENDAHARA</option>
+                    <option value="PROGRAM">PROGRAM</option>
+                </select>
+                <input type="date" name="date" required="">
+                <button type="submit">ARSIP</button>
+            </form>
+        </section>
+
+        <section id="gallery">
+            <h2>Arsip File</h2>
+            <div id="file-gallery">
+                                    <p>Tidak ada hasil pencarian.</p>
+                            </div>
+        </section>
+    </main>
+    <script>
+    function toggleFilters() {
+        var filters = document.getElementById('additional-filters');
+        if (filters.style.display === "none") {
+            filters.style.display = "block";
+        } else {
+            filters.style.display = "none";
+        }
+    }
+    </script>
+
+
+</body></html>
