@@ -1,0 +1,255 @@
+#ez-toc-container {
+	background: rgb(249, 249, 249); padding: 10px 20px 10px 10px; border-radius: 4px; border: 1px solid rgb(170, 170, 170); border-image: none; width: auto; margin-bottom: 1em; display: table; position: relative; box-shadow: 0px 1px 1px rgba(0,0,0,0.05); -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+div.ez-toc-widget-container {
+	padding: 0px; position: relative;
+}
+.ez-toc-light-blue#ez-toc-container {
+	background: rgb(237, 246, 255);
+}
+.ez-toc-white#ez-toc-container {
+	background: rgb(255, 255, 255);
+}
+.ez-toc-black#ez-toc-container {
+	background: rgb(0, 0, 0);
+}
+.ez-toc-transparent#ez-toc-container {
+	background: none;
+}
+div.ez-toc-widget-container ul {
+	display: block;
+}
+div.ez-toc-widget-container li {
+	padding: 0px; border: currentColor; border-image: none;
+}
+div.ez-toc-widget-container ul.ez-toc-list {
+	padding: 10px;
+}
+#ez-toc-container ul ul {
+	margin-left: 1.5em;
+}
+.ez-toc div.ez-toc-widget-container ul ul {
+	margin-left: 1.5em;
+}
+#ez-toc-container li {
+	padding: 0px;
+}
+#ez-toc-container ul {
+	padding: 0px;
+}
+#ez-toc-container li {
+	background: 0px 0px; list-style: none; margin: 0px; line-height: 1.6; overflow: hidden; z-index: 1;
+}
+#ez-toc-container ul {
+	background: 0px 0px; list-style: none; margin: 0px; line-height: 1.6; overflow: hidden; z-index: 1;
+}
+#ez-toc-container ul li {
+	background: 0px 0px; list-style: none; margin: 0px; line-height: 1.6; overflow: hidden; z-index: 1;
+}
+div.ez-toc-widget-container {
+	background: 0px 0px; list-style: none; margin: 0px; line-height: 1.6; overflow: hidden; z-index: 1;
+}
+div.ez-toc-widget-container li {
+	background: 0px 0px; list-style: none; margin: 0px; line-height: 1.6; overflow: hidden; z-index: 1;
+}
+#ez-toc-container .ez-toc-title {
+	margin: 0px; padding: 0px; text-align: left; line-height: 1.45;
+}
+.ez-toc-title-container {
+	width: 100%; display: table;
+}
+.ez-toc-title {
+	text-align: left; vertical-align: middle; display: inline;
+}
+.ez-toc-title-toggle {
+	text-align: left; vertical-align: middle; display: inline;
+}
+.ez-toc-btn {
+	font-weight: 400; display: inline-block;
+}
+.ez-toc-glyphicon {
+	font-weight: 400; display: inline-block;
+}
+.ez-toc-black#ez-toc-container a {
+	color: rgb(255, 255, 255);
+}
+.ez-toc-black#ez-toc-container a:visited {
+	color: rgb(255, 255, 255);
+}
+.ez-toc-black#ez-toc-container p.ez-toc-title {
+	color: rgb(255, 255, 255);
+}
+#ez-toc-container div.ez-toc-title-container + ul.ez-toc-list {
+	margin-top: 1em;
+}
+.ez-toc-wrap-left {
+	margin: 0px auto 1em 0px !important;
+}
+.ez-toc-wrap-left-text {
+	float: left;
+}
+.ez-toc-wrap-right {
+	margin: 0px 0px 1em auto !important;
+}
+.ez-toc-wrap-right-text {
+	float: right;
+}
+#ez-toc-container a {
+	color: rgb(68, 68, 68); text-decoration: none; display: inline-flex; box-shadow: none; text-shadow: none; flex-wrap: nowrap; align-items: stretch;
+}
+#ez-toc-container a:visited {
+	color: rgb(159, 159, 159);
+}
+#ez-toc-container a:hover {
+	text-decoration: underline;
+}
+#ez-toc-container a.ez-toc-toggle {
+	display: flex; align-items: center;
+}
+.ez-toc-widget-container ul.ez-toc-list li::before {
+	left: 0px; height: 30px; right: 0px; line-height: 30px; position: absolute; z-index: -1; content: " ";
+}
+.ez-toc-widget-container ul.ez-toc-list li.active {
+	background-color: rgb(237, 237, 237);
+}
+.ez-toc-widget-container li.active > a {
+	font-weight: 900;
+}
+.ez-toc-btn {
+	padding: 6px 12px; border-radius: 4px; border: 1px solid transparent; border-image: none; text-align: center; line-height: 1.4285; font-size: 14px; margin-bottom: 0px; vertical-align: middle; white-space: nowrap; cursor: pointer; -ms-user-select: none; background-image: none; -webkit-user-select: none; -moz-user-select: none; -o-user-select: none; user-select: none;
+}
+.ez-toc-btn:focus {
+	outline: rgb(51, 51, 51) dotted thin; outline-offset: -2px;
+}
+.ez-toc-btn:focus {
+	color: rgb(51, 51, 51); text-decoration: none;
+}
+.ez-toc-btn:hover {
+	color: rgb(51, 51, 51); text-decoration: none;
+}
+.active.ez-toc-btn {
+	outline: 0px; box-shadow: inset 0px 3px 5px rgba(0,0,0,0.125); background-image: none; -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+.ez-toc-btn:active {
+	outline: 0px; box-shadow: inset 0px 3px 5px rgba(0,0,0,0.125); background-image: none; -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+.ez-toc-btn-default {
+	border-color: rgb(204, 204, 204); color: rgb(51, 51, 51); box-shadow: inset 0px 1px 0px rgba(255,255,255,0.15), 0px 1px 1px rgba(0,0,0,0.075); text-shadow: 0px 1px 0px #fff; background-image: linear-gradient(rgb(255, 255, 255) 0px, rgb(224, 224, 224) 100%); background-repeat: repeat-x; background-color: rgb(255, 255, 255); -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);
+}
+.active.ez-toc-btn-default {
+	border-color: rgb(173, 173, 173); color: rgb(51, 51, 51); background-color: rgb(235, 235, 235);
+}
+.ez-toc-btn-default:active {
+	border-color: rgb(173, 173, 173); color: rgb(51, 51, 51); background-color: rgb(235, 235, 235);
+}
+.ez-toc-btn-default:focus {
+	border-color: rgb(173, 173, 173); color: rgb(51, 51, 51); background-color: rgb(235, 235, 235);
+}
+.ez-toc-btn-default:hover {
+	border-color: rgb(173, 173, 173); color: rgb(51, 51, 51); background-color: rgb(235, 235, 235);
+}
+.active.ez-toc-btn-default {
+	border-color: rgb(219, 219, 219); background-image: none; background-color: rgb(224, 224, 224);
+}
+.ez-toc-btn-default:active {
+	border-color: rgb(219, 219, 219); background-image: none; background-color: rgb(224, 224, 224);
+}
+.ez-toc-btn-sm {
+	padding: 5px 10px; border-radius: 3px; line-height: 1.5; font-size: 12px;
+}
+.ez-toc-btn-xs {
+	padding: 5px 10px; border-radius: 3px; line-height: 1.5; font-size: 12px;
+}
+.ez-toc-btn-xs {
+	padding: 1px 5px;
+}
+.ez-toc-btn-default:active {
+	box-shadow: inset 0px 3px 5px rgba(0,0,0,0.125); -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+.active.btn {
+	background-image: none;
+}
+.ez-toc-btn:active {
+	background-image: none;
+}
+.ez-toc-btn-default:focus {
+	background-position: 0px -15px; background-color: rgb(224, 224, 224);
+}
+.ez-toc-btn-default:hover {
+	background-position: 0px -15px; background-color: rgb(224, 224, 224);
+}
+.ez-toc-pull-right {
+	margin-left: 10px; float: right !important;
+}
+#ez-toc-container label.cssicon {
+	height: 30px;
+}
+#ez-toc-widget-container label.cssicon {
+	height: 30px;
+}
+.ez-toc-glyphicon {
+	top: 1px; line-height: 1; font-family: "Glyphicons Halflings"; font-style: normal; position: relative; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+:empty.ez-toc-glyphicon {
+	width: 1em;
+}
+.ez-toc-toggle i.ez-toc-glyphicon {
+	font-size: 16px; margin-left: 2px;
+}
+label.cssicon :empty.ez-toc-glyphicon {
+	font-size: 16px; margin-left: 2px;
+}
+#ez-toc-container input {
+	left: -999em; position: absolute;
+}
+.ez-toc-toggle #item {
+	left: -999em; position: absolute;
+}
+#ez-toc-container input[type=checkbox]:checked + nav {
+	border: currentColor; border-image: none; display: none; max-height: 0px; opacity: 0;
+}
+#ez-toc-widget-container input[type=checkbox]:checked + nav {
+	border: currentColor; border-image: none; display: none; max-height: 0px; opacity: 0;
+}
+#ez-toc-container .ez-toc-js-icon-con {
+	position: relative; cursor: pointer;
+}
+#ez-toc-container label {
+	position: relative; cursor: pointer;
+}
+#ez-toc-container .ez-toc-js-icon-con {
+	padding: 0px; border-radius: 5px; border: 1px solid rgb(153, 145, 145); border-image: none; left: 10px; width: 35px; font-size: 16px; float: right; position: relative; cursor: pointer;
+}
+#ez-toc-container .ez-toc-toggle label {
+	padding: 0px; border-radius: 5px; border: 1px solid rgb(153, 145, 145); border-image: none; left: 10px; width: 35px; font-size: 16px; float: right; position: relative; cursor: pointer;
+}
+.ez-toc-cssicon {
+	padding: 0px; border-radius: 5px; border: 1px solid rgb(153, 145, 145); border-image: none; left: 10px; width: 35px; font-size: 16px; float: right; position: relative; cursor: pointer;
+}
+div#ez-toc-container .ez-toc-title {
+	
+}
+.ez-toc-wrap-center {
+	margin: 0px auto 1em !important;
+}
+#ez-toc-container a.ez-toc-toggle {
+	background: inherit; border: inherit; border-image: inherit; color: rgb(68, 68, 68);
+}
+#ez-toc-container .eztoc-toggle-hide-by-default {
+	display: none;
+}
+label.cssiconcheckbox {
+	display: none;
+}
+.ez-toc-widget-container ul li a {
+	padding-left: 10px; display: inline-flex; flex-wrap: nowrap; align-items: stretch;
+}
+.ez-toc-widget-container ul.ez-toc-list li {
+	height: auto !important;
+}
+.ez-toc-icon-toggle-span {
+	width: 35px; height: 30px; display: flex; direction: ltr; justify-content: center; align-items: center;
+}
+.eztoc_no_heading_found {
+	padding-left: 10px; background-color: rgb(255, 255, 0);
+}

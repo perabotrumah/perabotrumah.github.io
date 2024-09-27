@@ -1,0 +1,141 @@
+@font-face {
+	font-family: GeneratePress;
+	src: url(../../fonts/generatepress.eot#iefix) format("embedded-opentype"), url(../../fonts/generatepress.woff2) format("woff2"), url(../../fonts/generatepress.woff) format("woff"), url(../../fonts/generatepress.ttf) format("truetype"), url(../../fonts/generatepress.svg#GeneratePress) format("svg");
+	font-weight: 400;
+	font-style: normal;
+}
+.cat-links::before {
+	line-height: 1; font-style: normal; font-variant: normal; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: auto;
+}
+.comments-link::before {
+	line-height: 1; font-style: normal; font-variant: normal; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: auto;
+}
+.dropdown-menu-toggle::before {
+	line-height: 1; font-style: normal; font-variant: normal; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: auto;
+}
+.generate-back-to-top::before {
+	line-height: 1; font-style: normal; font-variant: normal; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: auto;
+}
+.menu-toggle::before {
+	line-height: 1; font-style: normal; font-variant: normal; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: auto;
+}
+.nav-next .next::before {
+	line-height: 1; font-style: normal; font-variant: normal; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: auto;
+}
+.nav-previous .prev::before {
+	line-height: 1; font-style: normal; font-variant: normal; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: auto;
+}
+.search-form .search-submit::before {
+	line-height: 1; font-style: normal; font-variant: normal; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: auto;
+}
+.search-item a::before {
+	line-height: 1; font-style: normal; font-variant: normal; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: auto;
+}
+.tags-links::before {
+	line-height: 1; font-style: normal; font-variant: normal; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: auto;
+}
+.cat-links::before {
+	opacity: 0.7;
+}
+.comments-link::before {
+	opacity: 0.7;
+}
+.nav-next .next::before {
+	opacity: 0.7;
+}
+.nav-previous .prev::before {
+	opacity: 0.7;
+}
+.tags-links::before {
+	opacity: 0.7;
+}
+.menu-toggle::before {
+	width: 1.28em; text-align: center; font-family: GeneratePress; display: inline-block; content: "\f0c9";
+}
+.toggled .menu-toggle::before {
+	content: "\f00d";
+}
+.toggled.main-navigation .sfHover > a .dropdown-menu-toggle::before {
+	content: "\f106";
+}
+.search-item a::before {
+	width: 1.28em; text-align: center; font-family: GeneratePress; display: inline-block; content: "\f002";
+}
+.close-search.search-item a::before {
+	content: "\f00d";
+}
+.widget .search-form button::before {
+	font-family: GeneratePress; content: "\f002";
+}
+.dropdown-menu-toggle::before {
+	width: 0.8em; text-align: left; font-family: GeneratePress; display: inline-block; content: "\f107";
+}
+nav:not(.toggled) ul ul .dropdown-menu-toggle::before {
+	text-align: right;
+}
+.dropdown-hover :not(.toggled).sub-menu-left ul ul .dropdown-menu-toggle::before {
+	transform: rotate(180deg);
+}
+.dropdown-click .sfHover.menu-item-has-children > a .dropdown-menu-toggle::before {
+	content: "\f106";
+}
+.dropdown-hover nav:not(.toggled) ul ul .dropdown-menu-toggle::before {
+	content: "\f105";
+}
+.entry-header .cat-links::before {
+	display: none;
+}
+.entry-header .comments-link::before {
+	display: none;
+}
+.entry-header .tags-links::before {
+	display: none;
+}
+.cat-links::before {
+	width: 13px; text-align: center; font-family: GeneratePress; text-decoration: inherit; margin-right: 0.6em; display: inline-block; position: relative;
+}
+.comments-link::before {
+	width: 13px; text-align: center; font-family: GeneratePress; text-decoration: inherit; margin-right: 0.6em; display: inline-block; position: relative;
+}
+.nav-next .next::before {
+	width: 13px; text-align: center; font-family: GeneratePress; text-decoration: inherit; margin-right: 0.6em; display: inline-block; position: relative;
+}
+.nav-previous .prev::before {
+	width: 13px; text-align: center; font-family: GeneratePress; text-decoration: inherit; margin-right: 0.6em; display: inline-block; position: relative;
+}
+.tags-links::before {
+	width: 13px; text-align: center; font-family: GeneratePress; text-decoration: inherit; margin-right: 0.6em; display: inline-block; position: relative;
+}
+.cat-links::before {
+	content: "\f07b";
+}
+.tags-links::before {
+	content: "\f02c";
+}
+.comments-link::before {
+	content: "\f086";
+}
+.nav-previous .prev::before {
+	content: "\f104";
+}
+.nav-next .next::before {
+	content: "\f105";
+}
+.dropdown-hover .inside-right-sidebar .dropdown-menu-toggle::before {
+	content: "\f104";
+}
+.both-right.dropdown-hover .inside-left-sidebar .dropdown-menu-toggle::before {
+	content: "\f104";
+}
+.dropdown-hover .inside-left-sidebar .dropdown-menu-toggle::before {
+	content: "\f105";
+}
+.both-left.dropdown-hover .inside-right-sidebar .dropdown-menu-toggle::before {
+	content: "\f105";
+}
+.generate-back-to-top::before {
+	font-family: GeneratePress; content: "\f106";
+}
+.search-form .search-submit::before {
+	width: 1.28em; text-align: center; font-family: GeneratePress; display: inline-block; content: "\f002";
+}
